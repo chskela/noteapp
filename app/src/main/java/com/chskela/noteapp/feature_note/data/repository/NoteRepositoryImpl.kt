@@ -6,7 +6,7 @@ import com.chskela.noteapp.feature_note.domain.repository.NoteRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class NoteRepositoryImpl @Inject constructor (private val noteDao: NoteDao) : NoteRepository{
+class NoteRepositoryImpl (private val noteDao: NoteDao) : NoteRepository{
     override fun getNotes(): Flow<List<Note>> {
        return noteDao.getNotes()
     }
