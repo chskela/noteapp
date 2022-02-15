@@ -7,6 +7,7 @@ import com.chskela.noteapp.feature_note.data.repository.NoteRepositoryImpl
 import com.chskela.noteapp.feature_note.domain.repository.NoteRepository
 import com.chskela.noteapp.feature_note.domain.use_case.DeleteNoteUseCase
 import com.chskela.noteapp.feature_note.domain.use_case.GetNotesUseCase
+import com.chskela.noteapp.feature_note.domain.use_case.InsertNoteUseCase
 import com.chskela.noteapp.feature_note.domain.use_case.NoteUseCases
 import dagger.Module
 import dagger.Provides
@@ -41,6 +42,7 @@ object AppModule {
         return NoteUseCases(
             getNotesUseCase = GetNotesUseCase(repository),
             deleteNoteUseCase = DeleteNoteUseCase(repository),
+            insertNoteUseCase = InsertNoteUseCase(repository)
         )
     }
 }
