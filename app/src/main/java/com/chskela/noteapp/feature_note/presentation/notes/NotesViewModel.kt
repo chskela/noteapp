@@ -5,7 +5,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.chskela.noteapp.feature_note.domain.model.Note
-
 import com.chskela.noteapp.feature_note.domain.use_case.NoteUseCases
 import com.chskela.noteapp.feature_note.domain.util.NoteOrder
 import com.chskela.noteapp.feature_note.domain.util.OrderType
